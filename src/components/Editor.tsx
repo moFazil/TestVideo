@@ -26,7 +26,7 @@ export const Editor = observer(() => {
   useEffect(() => {
     const canvas = new fabric.Canvas("canvas", {
       height: 500,
-      width: 800,
+      width: 1000,
       backgroundColor: "#ededed",
     });
     fabric.Object.prototype.transparentCorners = false;
@@ -56,8 +56,8 @@ export const Editor = observer(() => {
       <div className="row-span-2 flex flex-col overflow-scroll">
         <Resources />
       </div>
-      <div id="grid-canvas-container" className="col-start-3 bg-slate-100 flex justify-center items-center">
-        <canvas id="canvas" className="h-[500px] w-[800px] row" />
+      <div id="grid-canvas-container" className="col-start-3 flex justify-center items-center">
+        <canvas id="canvas" />
       </div>
       <div className="col-start-4 row-start-1">
         <ElementsPanel />
